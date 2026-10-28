@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Olen Perfumes</title>
+<meta name="description" content="Olen Perfumes. A quiet, carefully chosen collection of perfumes and gift boxes. مجموعة هادية من العطور وبوكسات الهدايا.">
+<meta name="theme-color" content="#241710">
+<meta property="og:title" content="Olen Perfumes">
+<meta property="og:description" content="Fragrance, gently chosen.">
+<meta property="og:image" content="assets/logo-light.png">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=202610251207">
+</head>
+<body>
+<div class="top">
+  <div class="ticker" aria-label="Offers"><div class="track" id="track"></div></div>
+  <header class="head">
+    <div class="wrap">
+      <a class="mark" href="#top" aria-label="Olen Perfumes"><img class="mk" src="assets/mark.png" alt=""><span class="mt"><b>OLEN</b><small class="caps">PERFUMES</small></span></a>
+      <nav class="nav caps" aria-label="Main">
+        <a href="#shop" data-i="nav_shop"></a>
+        <a href="#brands" data-i="nav_brands"></a>
+        <a href="#boxes" data-i="nav_boxes"></a>
+        <a href="#how" data-i="nav_how"></a>
+      </nav>
+      <label class="hsearch">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="hq" type="search" data-ip="search_ph" autocomplete="off">
+      </label>
+      <div class="acts">
+        <button class="lang caps" id="lang" type="button" aria-label="Language"></button>
+        <button class="cartbtn" id="cartbtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="caps" data-i="cart"></span><span class="n" id="cn">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero" aria-roledescription="carousel" id="slider">
+    <div class="slides" id="slides"></div>
+    <div class="sctl">
+      <button class="snav prev" id="sprev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 6-6 6 6 6"/></svg></button>
+      <span class="scount num"><b id="scur">01</b><i class="sbar"><i id="sfill"></i></i><span id="stot">05</span></span>
+      <button class="snav next" id="snext" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></button>
+    </div>
+  </section>
+
+  <section class="brands-band" aria-label="Brands"><div class="bb-track" id="bbtrack"></div></section>
+
+  <section class="wrap sec rv" id="brands">
+    <div class="sec-title"><div><div class="eyebrow caps" data-i="brands_eb"></div><h2 data-i="brands_title"></h2></div><div class="rnavs"><button class="rnav" type="button" data-rail="brail" data-dir="-1" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 6-6 6 6 6"/></svg></button><button class="rnav" type="button" data-rail="brail" data-dir="1" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></button></div></div>
+    <div class="rail brail" id="brail"></div>
+  </section>
+
+  <section class="wrap sec rv" id="picks">
+    <div class="sec-title"><div><div class="eyebrow caps" data-i="picks_eb"></div><h2 data-i="picks_title"></h2></div><button class="link-all" type="button" data-go="all" data-i="view_all"></button></div>
+    <div class="rail prail" id="prail"></div>
+  </section>
+
+  <section class="wrap sec rv"><div class="promos" id="promos"></div></section>
+
+  <section class="boxes wrap sec rv" id="boxes">
+    <div class="sec-title"><h2 data-i="boxes_title"></h2><button class="link-all" type="button" data-go="boxes" data-i="boxes_all"></button></div>
+    <p class="lead" data-i="boxes_lead"></p>
+    <div class="rail prail" id="rail"></div>
+  </section>
+
+  <section class="shop wrap rv" id="shop">
+    <div class="sec-title"><div><div class="eyebrow caps" data-i="shop_eb"></div><h2 data-i="shop_title"></h2></div><span class="count caps" id="count"></span></div>
+    <p class="lead" data-i="size_note"></p>
+    <div class="bar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" data-ip="search_ph" autocomplete="off">
+      </label>
+      <div class="chips" id="chips"></div>
+      <select id="sort" aria-label="Sort"></select>
+    </div>
+    <div class="grid" id="grid"></div>
+    <button class="btn ghost more" id="more" type="button" hidden></button>
+  </section>
+
+  <section class="how wrap rv" id="how">
+    <h2 data-i="how_title"></h2>
+    <div class="steps">
+      <div class="step glass"><div class="no">I</div><h3 data-i="s1_t"></h3><p data-i="s1_s"></p></div>
+      <div class="step glass"><div class="no">II</div><h3 data-i="s2_t"></h3><p data-i="s2_s"></p></div>
+      <div class="step glass"><div class="no">III</div><h3 data-i="s3_t"></h3><p data-i="s3_s"></p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#top"><img class="mk" src="assets/mark.png" alt=""><span class="mt"><b>OLEN</b><small class="caps">PERFUMES</small></span></a>
+    <p data-i="foot_t"></p>
+    <div class="social" id="social"></div>
+    <p class="fine" data-i="foot_fine"></p>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dt">
+  <header>
+    <div><h2 id="dt"></h2><div class="dots" id="dots"><i></i><i></i><i></i></div></div>
+    <button class="x" id="dclose" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+  </header>
+  <div class="dbody" id="dbody"></div>
+  <div class="sum" id="sum"></div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="mbox" id="mbox"></div>
+</div>
+
+<button class="cartbar" id="cartbar" type="button"></button>
+<div class="toast glass" id="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js?v=202610251207"></script>
+<script src="data.js?v=202610251207"></script>
+<script src="crop.js?v=202610251207"></script>
+<script src="app.js?v=202610251207"></script>
+</body>
+</html>
